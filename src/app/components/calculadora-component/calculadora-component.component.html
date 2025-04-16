@@ -1,0 +1,34 @@
+<div class="component">
+    <h2>Exercício 10: Calculadora com &#64;switch</h2>
+    <input type="number" [(ngModel)]="valor1" />
+    <select [(ngModel)]="operacao">
+      <option value="soma">Soma</option>
+      <option value="subtracao">Subtração</option>
+      <option value="multiplicacao">Multiplicação</option>
+      <option value="divisao">Divisão</option>
+    </select>
+    <input type="number" [(ngModel)]="valor2" />
+    <div>
+      @if (operacao === 'divisao' && valor2 === 0) {
+        <p>Erro: divisão por zero!</p>
+      } @else {
+        <div @switch="operacao">
+          @case ('soma') {
+            <p>Resultado da soma: {{ calcular() }}</p>
+          }
+          @case ('subtracao') {
+            <p>Resultado da subtração: {{ calcular() }}</p>
+          }
+          @case ('multiplicacao') {
+            <p>Resultado da multiplicação: {{ calcular() }}</p>
+          }
+          @case ('divisao') {
+            <p>Resultado da divisão: {{ calcular() }}</p>
+          }
+          @default {
+            <p>Operação não reconhecida: "{{ operacao }}". Por favor, selecione uma operação válida.</p>
+          }
+        </div>
+      }
+    </div>
+  </div>

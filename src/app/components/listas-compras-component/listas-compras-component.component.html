@@ -1,0 +1,10 @@
+<div class="component">
+    <h2>Exercício 2: Lista de Compras com &#64;for</h2>
+    <ul>
+      @for (item of itens; track $index) {
+        <li>{{ item }}</li>
+      } @empty {
+        <p>Nenhum item na lista</p>
+      }
+    </ul>
+  </div>

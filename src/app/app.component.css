@@ -1,0 +1,15 @@
+.component {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #444;
+  }

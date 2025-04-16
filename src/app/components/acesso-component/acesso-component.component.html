@@ -1,0 +1,13 @@
+<div class="component">
+    <h2>Exercício 3: Acesso com &#64;if</h2>
+    <p>Idade: {{ idade }}</p>
+    <button (click)="aumentarIdade()">+ Idade</button>
+    <button (click)="diminuirIdade()">- Idade</button>
+    <div>
+      @if (idade >= 18) {
+        <p>Acesso permitido</p>
+      } @else {
+        <p>Acesso negado</p>
+      }
+    </div>
+  </div>

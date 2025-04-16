@@ -1,0 +1,10 @@
+<div class="component">
+    <h2>Exercício 6: Usuários com &#64;for</h2>
+    <ul>
+      @for (usuario of usuarios; track usuario.nome) {
+        <li>Nome: {{ usuario.nome }}, Idade: {{ usuario.idade }}</li>
+      } @empty {
+        <p>Nenhum usuário cadastrado</p>
+      }
+    </ul>
+  </div>

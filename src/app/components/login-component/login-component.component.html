@@ -1,0 +1,14 @@
+<div class="component">
+    <h2>Exercício 8: Login com 	&#64;if</h2>
+    <input type="email" [(ngModel)]="email" placeholder="Email" />
+    <input type="password" [(ngModel)]="senha" placeholder="Senha" />
+    <div>
+      @if (validarLogin() === 'Campos obrigatórios!') {
+        <p>Campos obrigatórios!</p>
+      } @else if (validarLogin() === 'Credenciais inválidas!') {
+        <p>Credenciais inválidas!</p>
+      } @else {
+        <p>Login bem-sucedido!</p>
+      }
+    </div>
+  </div>

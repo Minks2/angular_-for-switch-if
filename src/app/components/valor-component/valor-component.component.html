@@ -1,0 +1,12 @@
+<div class="component">
+    <h2>Exercício 7: Valor com &#64;switch</h2>
+    <button (click)="mudarValor(1)">Valor 1</button>
+    <button (click)="mudarValor('dois')">Valor "dois"</button>
+  
+    @switch (valor) {
+      @case (1) { <p>Um</p> }
+      @case ('dois') { <p>Dois</p> }
+      @default { <p>Valor não reconhecido</p> }
+    }
+  </div>
+  

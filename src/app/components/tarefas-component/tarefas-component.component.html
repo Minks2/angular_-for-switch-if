@@ -1,0 +1,13 @@
+<div class="component">
+    <h2>Exercício 4: Tarefas com &#64;for</h2>
+    <ul>
+      @for (tarefa of tarefas; track $index) {
+        <li>
+          {{ tarefa }}
+          <button (click)="removerTarefa($index)">Remover</button>
+        </li>
+      } @empty {
+        <p>Nenhuma tarefa pendente</p>
+      }
+    </ul>
+  </div>
