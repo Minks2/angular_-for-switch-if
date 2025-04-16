@@ -1,9 +1,17 @@
 <div class="component">
-    <h2>Exercício 9: Produtos com &#64;for</h2>
+    <h2> Exercício 9: Produtos com &#64;for</h2>
     <ul>
       @for (produto of produtos; track produto.nome) {
-        <li [class.promocao]="produto.promocao">
-          {{ produto.nome }} - R$ {{ produto.preco }}
+        <li>
+          @if (produto.promocao) {
+            <span class="promocao">
+              {{ produto.nome }} - R$ {{ produto.preco }}
+            </span>
+          } @else {
+            <span>
+              {{ produto.nome }} - R$ {{ produto.preco }}
+            </span>
+          }
         </li>
       } @empty {
         <p>Nenhum produto cadastrado</p>

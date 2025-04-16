@@ -8,6 +8,9 @@
       "node"
     ]
   },
+  "angularCompilerOptions": {
+    "enableTemplateControlFlow": true
+  },
   "files": [
     "src/main.ts",
     "src/main.server.ts",
